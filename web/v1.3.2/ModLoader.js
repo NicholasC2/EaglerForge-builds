@@ -91,7 +91,7 @@ function loadLoader() {
           var script = document.createElement("script");
           try {
             script.src =
-              "data:text/javascript," + encodeURIComponent(req.responseText);
+              "data:text/javascript," + req.responseText;
           } catch (error) {
             methodB(currentMod);
             return;
