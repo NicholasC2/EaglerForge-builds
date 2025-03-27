@@ -1,1 +1,1 @@
-[1.8.8(Latest)](/web/v1.3.2)
+[1.8.8(Latest)](/EaglerForge-builds/web/v1.3.2)
