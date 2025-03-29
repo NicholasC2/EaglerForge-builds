@@ -88,6 +88,8 @@ function loadLoader() {
         req.onload = function xhrLoadHandler() {
           console.log("EaglerML: Loading " + currentMod + " via method A.");
           var script = document.createElement("script");
+          script.setAttribute("data-Mod", currentMod);
+          script.setAttribute("data-isMod", true);
           try {
             script.src =
               "data:text/javascript," + decodeURIComponent(req.responseText);
@@ -95,8 +97,6 @@ function loadLoader() {
             methodB(currentMod);
             return;
           }
-          script.setAttribute("data-Mod", currentMod);
-          script.setAttribute("data-isMod", true);
           script.onerror = () => {
             console.log(
               "EaglerML: Failed to load " + currentMod + " via method A!"
