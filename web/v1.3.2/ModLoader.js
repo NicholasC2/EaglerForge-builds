@@ -61,7 +61,6 @@ function loadLoader() {
             "EaglerML: Failed to load " + currentMod + " via method B!"
           );
           script.remove();
-          totalLoaded++;
         };
         script.onload = () => {
           console.log(
